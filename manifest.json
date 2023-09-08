@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Blank Tab",
+    "description": "Custom new tab",
+    "version": "0.0.0.1",
+    "chrome_url_overrides": {
+        "newtab": "sources/index.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "sources/scripts/service.js"
+        ]
+    }
+}
